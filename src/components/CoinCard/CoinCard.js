@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CoinCard = ({coin}) => {
     return (
         <div className='shadow-lg rounded-md w-[250px] bg-white p-4'>
-            <Link to='/coins'>
+            <Link to={`/coin-details/${coin.id}`}>
                 <div className='flex justify-between items-center gap-4'>
                     <div className='flex-shrink-0'>
                         <img className='h-16 w-16 mx-auto object-cover rounded-full' src={coin.image} alt="coin" />
