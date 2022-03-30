@@ -15,7 +15,7 @@ const Coins = () => {
         <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl'>
             <p className='text-center mb-2 text-3xl font-bold text-gray-800'>Available Crypto Currencies</p>
             <p className='text-center mb-12 text-xl font-normal text-gray-500'>Total Coins {coins.length}</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center'>
+            <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center'>
                 {
                     coins.map(coin => <CoinCard key={coin.id} coin={coin}></CoinCard>)
                 }
